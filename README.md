@@ -14,3 +14,5 @@ doi: 10.1109/ICCAD.2014.7001377.
 
 You can view this page at: https://rasitot.github.io/iccad14/iccad2014problemC.html
 
+You can also check out the two powerpoint files that summarize the contest.
+
