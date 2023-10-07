@@ -1,0 +1,905 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><script src="iccad2014problemC_files/analytics.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=259;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="iccad2014problemC_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="iccad2014problemC_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="iccad2014problemC_files/ruffle.js"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cad_contest.ee.ncu.edu.tw:80/CAD-Contest-at-ICCAD2014/problem_c/default.html","20150108201916","https://web.archive.org/","web","/_static/",
+	      "1420748356");
+</script>
+<link rel="stylesheet" type="text/css" href="iccad2014problemC_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="iccad2014problemC_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"><!--
+  .s1 { font-family: sans-serif; font-weight: normal; font-size: 8pt; }
+ .s2 { font-family: sans-serif; font-weight: normal; font-size: 14pt; }
+ .s3 { font-family: sans-serif; font-weight: normal; font-size: 12pt; }
+ .p, p { font-family: sans-serif; font-weight: normal; font-size: 11pt; }
+ .s4 { font-family: sans-serif; font-weight: normal; font-size: 8.5pt; }
+  .auto-style1 {
+	text-align: center;
+}
+.auto-style2 {
+	line-height: 150%;
+}
+.auto-style3 {
+	line-height: 150%;
+	text-align: center;
+}
+.auto-style4 {
+	line-height: 100%;
+}
+.auto-style5 {
+	text-align: left;
+}
+  -->
+</style>
+<link href="iccad2014problemC_files/Untitled_12.css" rel="stylesheet" type="text/css">
+</head><body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" style="display: block; direction: ltr;" lang="en">
+</div><div id="wm-ipp-print">The Wayback Machine - 
+https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw:80/CAD-Contest-at-ICCAD2014/problem_c/default.html</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/default.html","20150108201916",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ <h1 class="auto-style1">IEEE CEDA / Taiwan MOE, ICCAD 2014 Contest</h1>
+<h2 class="auto-style1">Design for Manufacturability Flow for Advanced Semiconductor Nodes</h2>
+<h3 class="auto-style1">Rasit O. Topaloglu, Ph.D.<br>IBM Corporation
+<br>(rasit at us dot ibm dot com)
+</h3><hr>
+
+<!--
+<p class="auto-style2"><font color="red">*Update*: The <a href="#benchmark">Benchmark</a> of Problem C is now released. (2013/11/27)</font></p>
+<p class="auto-style2"><font color="red">*Update*: <a href="#EPE_Checker">The EPE Checker tool</a> is now updated. (2013/9/12)</font></p>
+<p class="auto-style2"><font color="red">*Update*: <a href="#EPE_Checker">The EPE Checker tool</a> is now updated. (2013/9/4)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The <a href="#simulator">pvbandsim</a> package is now updated. (2013/8/30)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The <a href="#simulator">pvbandsim</a> and <a href="#lithography">lithosim</a> packages are now updated. (2013/8/29)</font></p>
+<p class="auto-style2"><font color="red">*Update*: <a href="#EPE_Checker">The EPE Checker tool</a> is now updated. (2013/8/26)</font></p>
+<p class="auto-style2"><font color="red">*Update*: <a href="#measurement">The illustration of the EPE measurement</a> is now updated. (2013/8/21)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The final submission deadline of Problem C has been extended by 2 weeks. The new submission deadline will now be September 14, 2013. You are, of course, welcome to submit earlier. (2013/8/20)</font></p>
+<p class="auto-style2"><font color="red">*Update*: Few more points have been added to “<a href="#clarifications">10. Few more clarifications</a>”. (2013/8/20)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The <a href="#lithography">lithosim</a> package is now updated. (2013/8/5)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The <a href="#lithography">lithosim</a> package is now updated. (2013/8/1)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The <a href="#simulator">pvbandsim</a> and <a href="#lithography">lithosim</a> packages are now updated. (2013/7/29)</font></p>
+<p class="auto-style2"><font color="red">*Update*: Few more points have been added to “<a href="#clarifications">10. Few more clarifications</a>”. (2013/7/18)</a></font></p>
+<p class="auto-style2"><font color="red">*Update*: The simulation package "pvbandsim.tar.gz" for the evaluation tool is now <a href="#simulator">updated</a>. (2013/7/10)</font></p>
+<p class="auto-style2"><font color="red">*Update*: The Alpha Test Result is now released.</font></p>
+<p class="auto-style2"><font color="red">*Update*: The alpha submission details are now released.</font></p>
+<p class="auto-style2"><font color="red">*Update*: The final set of test cases and the scoring rules are now released.</font></p>
+<p class="auto-style2"><font color="red">*Update*: After one contestant pointed out that without an edge placement error (EPE) constraint, the best solution could effectively be an empty mask, the constraints have been slightly modified. We will now impose a very relaxed EPE constraint of 15nm per edge i.e. as long as the contour lies within 15nm of the original drawn shape, the objective should be to minimize process variability (PV) bands.</font></p>
+<p class="auto-style2"><font color="red">*Update*: The standalone process variability band (PV Band) simulator for this contest is now released!</font></p>
+-->
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Introduction</h2>
+<p class="auto-style2">Design for manufacturability (DFM) is the science
+ of characterization, modeling, and optimization of yield in 
+semiconductor integrated circuits (ICs). It is a newer field as compared
+ to more established VLSI design automation areas such as logic 
+synthesis or place&amp;route.; Due to this, not all design models or 
+flows are optimal yet. Due also to more stringent manufacturing 
+challenges, criteria that has not been important in the past may start 
+becoming important at newer technology nodes.</p>
+<p class="auto-style2">As circuit optimization requires simultaneous 
+considerations of several circuit aspects, improving yield may end up 
+with race conditions against criteria such as performance, runtime, or 
+layout size. All of these are important in semiconductor IC 
+manufacturing and should be accounted for in a DFM flow.</p>
+<p class="auto-style2">In the proposed problem, we tackle a traditional 
+DFM problem, albeit with new and important metrics. In particular, we 
+target fill insertion in VLSI while considering criteria which in the 
+past have not been too relevant.</p>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Background</h2>
+<p class="auto-style2">When a circuit is designed through either manual 
+or automated placement and route of polygons that define devices, 
+interconnects, or other passive devices, densities of these polygons 
+within windows of interest may have a large variation across such 
+windows in the rest of the layout. To balance the density of polygons, 
+fills are inserted to bring the density of several windows to a uniform 
+number which is picked by technology developers to be optimal.</p>
+<p class="auto-style2">As an input, your team will receive layouts with 
+regions identified for which fills can be inserted. You will be provided
+ basic design rules that you have to adhere to. (Violation of these 
+rules will result in your submission to fail.)</p>
+<p class="auto-style2">The output will be a layout with fills that have 
+been optimally inserted into the regions provided. (Insertion of fills 
+outside the regions that are identified will result in your submission 
+to fail. Abutting these regions is acceptable.)</p>
+<p class="auto-style2">To enable a fair comparison, usage of GPU will 
+not be permitted. However, multicore processors and systems that contain
+ such processors will be permitted. Wall-clock runtime will be used in 
+scoring.</p>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Input:</h2>
+<ul>
+	<li><p class="auto-style2">layout in GDS format with regions identified to fill: <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/s.gds"><font color="red">testcase s</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/b.gds"><font color="red">testcase b</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/m.gds"><font color="red">testcase m</font></a> </p></li>
+	<li><p class="auto-style2">density and average linewidth statistics for no-fill given as ASCII data files: <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/sM1.txt"><font color="red">s_M1</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/sM2.txt"><font color="red">s_M2</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/sM3.txt"><font color="red">s_M3</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/bM1.txt"><font color="red">b_M1</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/bM2.txt"><font color="red">b_M2</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/bM3.txt"><font color="red">b_M3</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/mM1.txt"><font color="red">m_M1</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/mM2.txt"><font color="red">m_M2</font></a> <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/mM3.txt"><font color="red">m_M3</font></a>.
+ First two columns indicate window location, third column is the no-fill
+ density within that window, and the last column shows the linewidth 
+average in micrometers. These statistics from no-fill option needs to be
+ used towards your solution, however the non-fillable areas in the 
+testcases can be used to estimate these statistics until these files are
+ provided.</p></li>
+	<li><p class="auto-style2">design rules relevant to the problem: <font color="red">minimum metal width and space are 32nm, minimum metal area is 4800nm^2.</font></p></li>
+</ul>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Output:</h2>
+<ul>
+	<li><p class="auto-style2">layout in GDS format with fills that adhere to provided design rules</p></li>
+</ul>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Objectives:</h2>
+<ul>
+	<li><p class="auto-style2">minimize performance degradation (total area
+ of fill and overlap of fill with neighboring (top and bottom if exists)
+ layer non-fill regions). Accounts for 20% of total score.</p></li>
+	<li><p class="auto-style2"><font color="red">minimize variation </font>, i.e., chip density standard deviation. Deviations are added up accross layers. Accounts for 20% of total score.
+	</p></li><li><p class="auto-style2"><font color="red">minimize line deviation </font>,
+ i.e., density variations per window from column-based average - all for
+ each layer separately. Variations are added up for score. Accounts for 
+20% of total score.</p></li>
+	<li><p class="auto-style2"><font color="red">minimize outliers </font>,
+ i.e., density variations per window from plus or minus 3 sigma from 
+chip layer mean. Variations are added up for score. Accounts for 20% of 
+total score.</p></li>
+	<li><p class="auto-style2">minimize runtime. Accounts for 15% of total score.</p></li>
+	<li><p class="auto-style2">minimize layout size (final GDS size). Accounts for 5% of total score.</p></li>
+</ul>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Evaluation:</h2>
+<ul>
+	<li>
+	<p class="auto-style2">The score will be computed based on the 
+submitted solutions. Results with correct solutions will be considered 
+for each portion of the score. Scores from individual portions will be 
+added to constitute the final score. Final score is weighted average of 
+all testcase scores. Success in select individual criterion will also be
+ recognized across teams however submitted layouts must be free of GDS 
+or design rule errors to win the contest.</p>
+	</li>	
+</ul>
+
+<!----------------------------------------------------------------------------->
+<h2 class="auto-style2">Q&amp;A;: </h2>
+<ol>
+	<li>
+	<p class="auto-style2">What is the definition of each layer and what is the relation among layers?<br></p>
+	<font color="red">Layer 1 is at the very bottom. They are ordered by the layer numbers.</font>
+	</li>
+	<li>
+	<p class="auto-style2">What is the constraint of fill which would be inserted to increase density, like width, height, or shape?<br></p>
+	<font color="red">Fill and metal both use the same rules. You can only use rectangular fill.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">Can we use tool to help reading GDS files? or only use c++ code to read?<br></p>
+	<font color="red">Yes, any tool, library, etc. can be used.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">We were wondering how may you estimate the 
+window density? we have seen some papers that have different computation
+ is there any unified formula? And how do you evaluate "minimize 
+variation"?<br></p>
+	<font color="red">We will use 20um non-overlapping square windows starting from the lower left corner.</font>
+	</li>
+	<li>
+	<p class="auto-style2">When I read the GDS file, I know not how to find the regions identified to fill. How do I recognize the regions?<br></p>
+	<font color="red">Any area that is covered can be filled. Empty regions cannot be filled.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Can you explain it in detail? Because I think 
+the empty regions should be fill and the covered area can not be filled 
+(no place to fill). Moreover, the problem C said:" however the 
+non-fillable areas in the testcases can be used to estimate these 
+statistics for now." So I think the non-fillable area can not be empty 
+regions.<br></p>
+	<font color="red">The GDS files uploaded shows where you can fill; they
+ don't show what original features were. For the latter, only window by 
+window statistics will be provided.</font>
+	</li>
+	<li>
+	<p class="auto-style2">We calculate the density of fillable region (read from s.gds) at window(0,0) at layer 10003, it is 0.953734 (381493600 nm<sup>2</sup> / 400000000 nm<sup>2</sup>).
+ And the no-fill density you gave us (in sM3.txt) in that window is 
+0.3288304. We are wondering why is that the fillable region area plus 
+no-fill region area will exceed total window area.<br></p>
+	<font color="red">.txt files for the s testcase seem incorrect; I will update them.</font>
+	</li>
+	<li>
+	<p class="auto-style2">What is the definition of "linewidth" ? Can you give us an example?<br></p>
+	<font color="red"> Smaller width of a rectangle.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">If we don't have the total number of "lines", how could we calculate the "linewidth average" after we insert dummy fills?<br></p>
+	<font color="red">You cannot, but you can find a way to estimate it.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">Are the fillable region (read from GDS file) and
+ the original layout already adhere to the design rules? (Meaning the 
+boundary of fillable region can fill)<br></p>
+	<font color="red">Fills can abut the fillable region boundary.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Do the polygons in input files (s.gds/b.gds) stand for fillable region or original polygons and dummy fills ?<br></p>
+	<font color="red">Fillable region.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">about the first objectives it says "overlap of 
+fill with neighboring (top and bottom if exists) layer non-fill 
+regions", Does non-fill region mean the original blank region or it 
+include the dummy which we had filled?<br></p>
+	<font color="red">You should also avoid the fills you inserted.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Do our program read two files that one is GDS file and the other is density information file ? <br></p>
+	<font color="red">Yes.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">Our output gds file should be the no-fill region just like the input gds files, or should be the fill region we insert?<br></p>
+	<font color="red">Provide the fill you insert.</font>
+	</li>
+	<li>
+	<p class="auto-style2">About the final upload files, should we only 
+upload the binary executive file of our code? What if some tools and 
+libraries are used?<br></p>
+	<font color="red">Upload everything needed to run your code on the server.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Can we use rectilinear polygons to fill? or only rectangle? If we can, how do we estimate linewidth?<br></p>
+	<font color="red">Only rectangles.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">Would you please do me the favor to tell me whether we can use some LP solvers to solve problem C, like cplex? Is it available?<br></p>
+	<font color="red">Only open source solvers can be used.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">About 3rd problem, we have  question about 
+linewidth. Based on Q&amp;A;(9) we are told that we cannot c alculate 
+linewidth in exact value. However, practically this is no way an issue 
+for a layout. That is, average linewidth is easy to obtain from original
+ layout. So, may you tell us what are your considerations to not giving 
+the exact information? Furthermore, linewidth accounts for 30% total 
+score, isn't it too much if we can only estimate it by taking chance, 
+and by no means can we know whether our estimation is close?<br></p>
+	<font color="red">We will either provide more information about the layout, provide an estimation method, or remove this metric going forward.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">We are confused about one constraint: minimum 
+metal width and space are 32nm, minimum metal area is 4800nm^2. Are all 
+fills should follow this constraint, too? Can the constraint be 
+considered as " minimum fill width and space are 32nm, minimum fill area
+ is 4800nm^2."  ? Or fills are not necessary to follow this constraint.<br></p>
+	<font color="red">Yes, fills also have to follow the same rules; fills are metal, too. Your example is correct.</font>
+	</li>
+	<li>
+	<p class="auto-style2">I have opened my GDS output in a layout 
+viewer,but I did not find any DRC violations. Would you please tell me 
+which DRC violation do we have?<br></p>
+	<font color="red">There was a mistake in my DRC script that caught the min area rectangles by mistake. You are indeed DRC clean.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">What does "db precision error" mean?<br></p>
+	<font color="red">Here is the exact error message; perhaps you can 
+figure a solution if you recognize this value: ERROR: Rule file 
+precision 1000 is not consistent with database precision 999.999952503 
+in input file DB is database. There is a default minimum dimension 
+defined in each layout. Somehow when you have passed your layout 
+features through various operations, this value has changed. Perhaps you
+ can try to open your text layout on a very small example and see if the
+ input and output ASCII layouts have a different parameter. You may be 
+able to find such definition at the very top or bottom of your layout 
+ASCII file. You may want to consider using a different GDS translator, 
+too.</font>
+	</li>
+	<li>
+	<p class="auto-style2">As the release of the result of alpha test, will
+ there be any explicit cost metric given? For example, there are 4 
+objectives for variation - std, diff, dev from chip mean and dev from 
+row-based. Will they be weighted or just added up? And is the final 
+score "a*performance+b*variation+c*runtime+d*size"? If so, will the 
+weight be given?<br></p>
+	<font color="red">Unless the ratios specified in the website now, 
+everything will have equal weight. This means every factor gets 
+normalized first.</font>
+	</li>
+	<li>
+	<p class="auto-style2">In Objective 2, we need to minimize 
+variation,which is consist of many items. Can you tell us how do you 
+calculate the variation into that single fraction in alpha test results?<br></p>
+	<font color="red">For now, it was only the standard deviation of density.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">For each layer metal, is there a fixed type for 
+dummy metals to choose? For example, there are three type (i.e. 
+(width,length):(2,3)、(3,4)、(4,5))dummy metal pool to insert in layer 2, 
+so I only can choose these three type to insert. If there isn't any 
+constraint for dummy metal, we consider that we can insert any width or 
+length of metal into fillable reigon. From problem description, we only 
+know the lower bound for metal width is 32nm. We wonder that the dummy 
+metal width should be fixed for each layer, and the length of dummy 
+metals can be different. The length decides the final area of inserted 
+dummy metal.<br></p>
+	<font color="red">Width need not be fixed. Any aspect ratio is OK.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Is there any fixed placement way for dummy metal
+ in each layer? For example, any inserted dummy metal in layer 1 only 
+can be placed by horizontal or vertical direction? <br></p>
+	<font color="red">No such rule in this contest.</font>
+	</li>
+	<li>
+	<p class="auto-style2">We still confused the description, "overlap of 
+fill with neighboring (top and bottom if exists) layer non-fill 
+regions." and the answer of Q&amp;A; #12. We wonder that the more 
+overlaps happened, the worse the performance is. And what is the overlap
+ definition?  From the answer of Q&amp;A; #12, you mean we should insert
+ the dummy metal which won't overlap the fillable reigon which is on top
+ or bottom layer? <br></p>
+	<font color="red">Your tool should minimize overlap of fills with non-filleable region and other fills you insert in neighboring layers.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Are input’s GDS files only testcase s and testcase b provided on the website during Final Evaluation? <br></p>
+	<font color="red">There may be one ore more secret testcases.</font>
+	</li>
+	<li>
+	<p class="auto-style2">About Alpha Test Results of this time, what is the unit of runtime and size? <br></p>
+	<font color="red">Seconds and Bytes respectively.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: Dose the objective"minimize the linewidth average difference" mean against the whole layout or each window?<br></p>
+	<font color="red">We have removed the linewidth optimization from the objectives.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: How to calculate line deviation? I don’t know what column-based average is.<br></p>
+	<font color="red">The column of windows within which you are computing 
+the deviation of a given window. The column of windows is a vertical 
+slab of layout area where the width is defined by the window for which 
+you are computing this metric. </font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: In the latest revision, if we use parallel 
+programming, how would runtime be calculated? second * #CPU or just 
+overall runtime?<br></p>
+	<font color="red">We are working on a method to account for number of 
+cores and maximum memory utilized. We will penalize these if we 
+implement the monitoring system on time. Otherwise, we will go by 
+runtime only. Number of cores would likely have a log dependency, i.e., 
+runtime would be divided by log(#cores).</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: How did you calculate "performance degrade" based on total area and overlap area?<br></p>
+	<font color="red">We merge your fill results with original layout. Then
+ take area overlaps between layers (1,2) and (2,3). We add the overlap 
+area. There is no way you can compute the exact output as you do not 
+have access to original layouts.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: How did you calculate both "line hotspot" and
+ "outlier hotspot"? Is "hotspot" a statistically well defined word? If 
+so, sorry for our inadequate understanding, yet may you please define 
+them explicitly?<br></p>
+	<font color="red">Hotspot is a layout area (window) selected based on a
+ metric. The selection is made if the metric is beyond a certain 
+threshold. A hotspot may have a score associated with it; such score may
+ indicate severity with respect to the threshold.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q: Do you calculate the variation by this 
+formula: sqr_root( sum( (window.density - chip mean)^2 ) / window_num)? 
+Because our own calculation is quite different from the result released.<br></p>
+	<font color="red">It is "chip layer mean." Each layer is added at the end.</font>
+	</li>
+	<li>
+	<p class="auto-style2">Q:  By Q&amp;A;(32), do you mean that the 
+"performance degrade" is only taking overlaps between (1,2) and (2,3) 
+into consideration? How about total fill area?<br></p>
+	<font color="red">Beta submission only checked the overlap but final 
+submission will also check area. Area will impact 5% and overlap will be
+ 15% of total score.</font>
+	</li>	
+	<li>
+	<p class="auto-style2">Q:  Do the ASCII data files M1, M2, and M3 
+correspond to the lowest layer to highest layer (10001 -&gt; 10003) or 
+correspond to the descriptively ordered layer (10002/10001/10003) in gds
+ file?<br></p>
+	<font color="red"> Lowest to highest.</font>
+	</li>	
+</ol>
+
+<h2 class="auto-style2">Evaluation Results</h2>
+<h3 class="auto-style2">Final Results:</h3>
+
+<ul>
+	<li>Final evaluation results during ICCAD presentation: <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/prob_C_slides.pdf">pdf</a></li>
+	<ul>
+		<li>1st place - cada064: number2 <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/top3_results/cada064.tar">solutions</a></li>
+		<li>2nd place - cada051: hululululu <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/top3_results/cada051.tar">solutions</a></li>
+		<li>3rd place - cada012: NCTU_EDALI <a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/top3_results/cada012.tar">solutions</a></li>
+	</ul>
+	<li><a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/contest14_topicC_results_final_submit.ods">Spreadsheet with formula embedded to compute final scores.</a><br></li>
+	<li>For this problem, please cite the paper at this <a href="https://web.archive.org/web/20150108201916/http://dl.acm.org/citation.cfm?id=2691439&amp;CFID=461846990&amp;CFTOKEN=57925255">link.</a> </li>
+</ul>
+
+<h3 class="auto-style2">Beta Test Results:</h3>
+<ul>
+	<li><a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/files/contest14_topicC_results_public.ods">Spreadsheet with formula embedded to compute scores.</a><br></li>
+	<li>
+		<table width="800px" border="1" align="center">
+		<tbody><tr>
+			<td colspan="19" align="center">testcase_s</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center">GDS generated</td>
+			<td align="center">GDS correctness</td>
+			<td align="center">DRC check</td>
+			<td align="center">Performance Degrade</td>
+			<td align="center">Variation</td>
+			<td align="center">Runtime</td>
+			<td align="center">Size</td>
+			<td align="center">Line Hotspot</td>
+			<td align="center">Outliner Hotspot</td>
+			<td align="center">Rankable</td>
+			<td align="center">Perf Score</td>
+			<td align="center">Variation Score</td>
+			<td align="center">Runtime Score</td>
+			<td align="center">Size Score</td>
+			<td align="center">Line Score</td>
+			<td align="center">Outliner Score</td>
+			<td align="center">Testcase Score</td>
+			<td align="center">Potential Score</td>
+		</tr>
+		<tr>
+			<td align="center">Best result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">12761</td>
+			<td align="center">0.081</td>
+			<td align="center">3.12</td>
+			<td align="center">1584</td>
+			<td align="center">1740</td>
+			<td align="center">0.051</td>
+			<td align="center">1</td>
+			<td align="center">0.74478</td>
+			<td align="center">0.19</td>
+			<td align="center">0.9376</td>
+			<td align="center">0.999947</td>
+			<td align="center">0.13</td>
+			<td align="center">0.854286</td>
+			<td align="center">0.574451</td>
+			<td align="center">0.563028</td>
+		</tr>
+		<tr>
+			<td align="center">2nd result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">12149</td>
+			<td align="center">0.082</td>
+			<td align="center">5.43</td>
+			<td align="center">1303920</td>
+			<td align="center">1771</td>
+			<td align="center">0.066</td>
+			<td align="center">1</td>
+			<td align="center">0.75702</td>
+			<td align="center">0.18</td>
+			<td align="center">0.8914</td>
+			<td align="center">0.956536</td>
+			<td align="center">0.115</td>
+			<td align="center">0.811429</td>
+			<td align="center">0.554127</td>
+			<td align="center">0.56078</td>			
+		</tr>
+		<tr>
+			<td align="center">3rd result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">12153</td>
+			<td align="center">0.078</td>
+			<td align="center">41.27</td>
+			<td align="center">21699942</td>
+			<td align="center">1728</td>
+			<td align="center">0.031</td>
+			<td align="center">1</td>
+			<td align="center">0.75694</td>
+			<td align="center">0.22</td>
+			<td align="center">0.1746</td>
+			<td align="center">0.276669</td>
+			<td align="center">0.136</td>
+			<td align="center">0.911429</td>
+			<td align="center">0.444897</td>
+			<td align="center">0.500055</td>			
+		</tr>		
+		</tbody></table>
+	</li>
+</ul>
+
+<h3 class="auto-style2">Alpha Test Results:</h3>
+<ul>
+	<li><a href="https://web.archive.org/web/20150108201916/http://cad_contest.ee.ncu.edu.tw/CAD-Contest-at-ICCAD2014/problem_c/contest14_topicC_notes.pdf">Notes</a><br></li>
+	<li>
+		<table width="800px" border="1" align="center">
+		<tbody><tr>
+			<td colspan="8" align="center">testcase_s</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center">GDS generated</td>
+			<td align="center">GDS correctness</td>
+			<td align="center">DRC check</td>
+			<td align="center">Performance</td>
+			<td align="center">Variation</td>
+			<td align="center">Runtime</td>
+			<td align="center">Size</td>
+		</tr>
+		<tr>
+			<td align="center">Best result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">17153</td>
+			<td align="center">0.085</td>
+			<td align="center">10.84</td>
+			<td align="center">4481648</td>
+		</tr>
+
+		<tr>
+			<td align="center">2nd result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Fail</td>
+			<td align="center">12312</td>
+			<td align="center">0.041</td>
+			<td align="center">4.11</td>
+			<td align="center">2317056</td>
+		</tr>
+		<tr>
+			<td align="center">3rd result</td>
+			<td align="center">Pass</td>
+			<td align="center">Pass</td>
+			<td align="center">Fail</td>
+			<td align="center">14329</td>
+			<td align="center">0.101</td>
+			<td align="center">6.55</td>
+			<td align="center">25522992</td>
+		</tr>		
+		</tbody></table>
+	</li>
+</ul>
+
+
+<h2 class="auto-style2">Revisions: </h2>
+<ul>
+	<li>
+	<p class="auto-style2">5/13/2014:<br></p>
+	<font color="red">Added testcase_b. Updated Q&amp;A; responses. Updated variation criteria.</font>
+	</li>
+	<li>
+	<p class="auto-style2">5/14/2014:<br></p>
+	<font color="red">Assigned score weights. Updated evaluation score.</font>
+	</li>
+	<li>
+	<p class="auto-style2">5/30/2014:<br></p>
+	<font color="red">Provided no-fill statistics for testcases. Updated testcase b.</font>
+	</li>
+	<li>
+	<p class="auto-style2">6/20/2014:<br></p>
+	<font color="red">Updated testcase s starting statistics. Updated design rules.</font>
+	</li>
+	<li>
+	<p class="auto-style2">8/13/2014:<br></p>
+	<font color="red">Major updates to scoring. Linewidth is not considered
+ in optimization. Read thoroughly all sections. You can utilize full 
+power of parallel programming with no penalty. Excessive runtime or 
+memory consumption results in manual termination of your program.</font>
+	</li>
+	<li>
+	<p class="auto-style2">8/16/2014:<br></p>
+	<font color="red">Added spreadsheet showing how score is computed. We 
+are working on scripts to measure number of cores used and maximum 
+memory. We may penalize extra cores by logarithm of number of cores used
+ as well as maximum memory. However I strongly recommended that you take
+ advantage of parallel programming features of the system as much as 
+possible.</font>
+	</li>
+	<li>
+	<p class="auto-style2">8/25/2014:<br></p>
+	<font color="red">Updated ASCII files for testcase s. Hit F5 if you are viewing in a browser.</font>
+	</li>
+	<li>
+	<p class="auto-style2">8/28/2014:<br></p>
+	<font color="red">Updated ASCII files for testcase b. Hit F5 if you are viewing in a browser.</font>
+	</li>
+	<li>
+	<p class="auto-style2">8/28/2014:<br></p>
+	<font color="red">A secret testcase with similar number of layers and 
+rules will be used for final submission. Testcases will be prorated, 
+likely with 25% for s, 35% for the hidden one, and 40% for b.</font>
+	</li>
+	
+</ul>
+<!----------------------------------------------------------------------------->
+<!--
+<a name="benchmark"></a><h2 class="auto-style1">5.  Benchmark</h2>
+<ol>
+<li>
+<p class="auto-style2">The first toy benchmark</p>
+<p class="auto-style2"><a href="m1U2.glp">m1U2.glp</a><br>
+<a href="m1U2.doc">Description of format</a></p>
+</li>
+<li>
+<p class="auto-style2">The final set of test cases</p>
+<p class="auto-style2"><a href="M1_test1.glp">M1_test1.glp</a><br>
+<p class="auto-style2"><a href="M1_test2.glp">M1_test2.glp</a><br>
+<p class="auto-style2"><a href="M1_test3.glp">M1_test3.glp</a><br>
+<p class="auto-style2"><a href="M1_test4.glp">M1_test4.glp</a><br>
+</li>
+<li>
+<p class="auto-style2"><a href="M1_testcases.tar.gz">M1_testcases.tar.gz</a><br>
+</li>
+</ol>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1"><a name="lithography"></a>6. Lithography Simulator</h2> 
+<p class="auto-style2"><a href="lithosim.tar.gz">lithosim.tar.gz</a><br>
+
+<p class="auto-style2">The standalone lithography simulator for this contest is now released! Below are the details.<br></p>
+<p class="auto-style2"><b><u>Basics:</u></b><br></p>
+<p class="auto-style2">The lithography simulator uses industrial optical models for the M1 layer and a constrant threshold resist model, with a normalized intensity threshold of 0.225. The input to the simulator has to be a GULP file (similar to the toy benchmark). The input layer <u>MUST</u> be called “M1OPC” (note this, because it can only use the models if this layer name matches). The output will be a text file with a set of 0s and 1s. The 1s correspond to the contours. I have also added some PNG output (check the “Dump” directory) to make viewing of contours easy).<br>
+Please note that any input layout is shifted by 512 pixels in both x and y directions in order to account for environment. The output text file is also in this form. Be sure to remove the 512 pixels from x and y axes when you read back the text file.<br>
+Currently, the simulator only supports a single tile of 1024x1024 pixels. So you can test and build your system on small testcases (&lt;1umx1um). In the next week or so, I will release a simulator which can handle multiple tiles and hence larger layouts.
+</p>
+<p class="auto-style2"><b><u>Setup:</u></b><br></p>
+<p class="auto-style2">I have compiled on a Linux machine, and would recommend you do the same. If you need to use other platforms and are unable to compile, please e-mail me with details and I can try to help.</p>
+<ol>
+<li><p class="auto-style2">Download the tarball from the website (<a href="lithosim_v4.tar.gz">lithosim_v4.tar.gz</a>)</p></li>
+<li><p class="auto-style2">Extract it – you should see a folder called lithosim</p></li>
+<li><p class="auto-style2">In the directory, use “<i>make</i>” to create the executable “<i>lithosim.exe</i>”
+<ol>
+<li><p class="auto-style2">Ignore any warnings related to “lodepng” in this step</p></li>
+<li><p class="auto-style2">There should be no other dependencies. I have tried to ensure that no other package will be necessary for compilation</p></li>
+<li><p class="auto-style2">If compilation is unsuccessful, contact me with details of the OS and compilation errors</p></li>
+</ol>
+<li><p class="auto-style2">Use the executable as follows:</p>
+<pre>lithosim.exe &lt;inputfile.glp&gt; &lt;outputfile.txt&gt;</pre></li>
+</ol>
+<p class="auto-style2">I have provided a sample input file in the “Benchmarks” directory called “m1_straightlines_OPC.glp”. You may use this to start testing. It should take approximately 2 minutes for a simulation on this layer.</p>
+<p class="auto-style2"><b><u>Thoughts:</u></b><br></p>
+<p class="auto-style2">The output format is rather rudimentary. If any contestant has a better suggestion on how they would like the output, please email me and I will consider it.<br>
+Given the time it takes to run one iteration of lithography simulation, contestants should consider a mask optimization algorithm that converges in the fewest iterations.<br>
+More benchmarks are on the way!<br>
+Have fun playing with this lithography simulator and watching your contours magically develop as your algorithm improves!<br>
+Good luck!</p>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1"><a name="simulator"></a>7. Standalone process variability band (PV Band) simulator</h2>
+<p class="auto-style2">The standalone process variability band (PV Band) simulator for this contest is now released! Below are the details.<br></p>
+<p class="auto-style2"><b><u>Basics:</u></b><br></p>
+<p class="auto-style2">The process variability (PV) band simulator is very similar to the lithography simulator provided. It uses two simulations (i) at nominal focus and +2% dose, (ii) at defocus and -2% dose. It then takes the two contours formed, performs an XOR which generates the PV Bands. The input to the simulator has to be a GULP file (similar to the toy benchmark). The input layer <u>MUST</u> be called “M1OPC” (note this, because it can only use the models if this layer name matches). The output will be a text file with just a single line of output corresponding to the PV Band area in square nanometers.<br>
+Please note that the <u>lithography simulator</u> source code is free for all contestants to modify, but the PV Band simulation code will be used as is, with <u>NO</u> modification, in order to test the final mask solutions.<br>
+Also note that the Debug folder will contain PNG files relating to the mask and the PV bands, for you to visualize your PV band outputs.
+</p>
+<p class="auto-style2"><b><u>Setup:</u></b><br></p>
+<p class="auto-style2">I have compiled on a Linux machine, and would recommend you do the same. If you need to use other platforms and are unable to compile, please e-mail me with details and I can try to help.</p>
+<ol>
+<li><p class="auto-style2">Download the tarball from the website (<a href="pvbandsim_v4_1.tar.gz">pvbandsim_v4_1.tar.gz</a>)</p></li>
+<li><p class="auto-style2">Extract it – you should see a folder called “pvbandsim”</p></li>
+<li><p class="auto-style2">In the directory, use “<i>make</i>” to create the executable “<i>pvbandsim.exe</i>”
+<ol>
+<li><p class="auto-style2">Ignore any warnings related to “lodepng” in this step</p></li>
+<li><p class="auto-style2">There should be no other dependencies. I have tried to ensure that no other package will be necessary for compilation</p></li>
+<li><p class="auto-style2">If compilation is unsuccessful, contact me with details of the OS and compilation errors</p></li>
+</ol>
+<li><p class="auto-style2">Use the executable as follows:</p>
+<pre>pvbandsim.exe &lt;inputfile.glp&gt; &lt;outputfile.txt&gt;</pre></li>
+</ol>
+<p class="auto-style2">I have provided a second sample input file in the “Benchmarks” directory called “m1U2_OPC.glp”. You may use this as an additional OPC testcase to the existing “m1_straightlines_OPC.glp” file. It should take approximately 3-4 minutes for a PV band simulation on this layout.</p>
+<p class="auto-style2"><b><u>Thoughts:</u></b><br></p>
+<p class="auto-style2">The PV Band simulation time for each of your mask solutions will not be considered as part of your runtime. I will be taking your final generated mask solution and running it through this simulator at my end to measure the area. The code has been released for you to help optimize your mask solutions.<br>
+Good luck!</p>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1">8. Scoring Rules</h2>
+<p class="auto-style2"><b><u>Scoring Rules:</u></b><br></p>
+<p class="auto-style2">Each final submission will be evaluated, as mentioned before, on the runtime as well as the PV band area. The main emphasis of this contest is to enable a 'smart' mask optimization solution that will converge to a mask solution in the fewest iterations possible, and not necessarily on parallel programming. Although GPU-based solutions will be accepted, the runtime will be scaled to enable fair comparisons with single CPU solutions. Based on the above, the formula for calculating score has been set as:</p>
+<p class="auto-style2">
+<pre><i>Score</i> = <i>Sum</i>(<i>Runtime</i>*(<i>nprocs-1</i>) + <i>4*PVBand_Area</i>)</pre>
+</p>
+<p class="auto-style2">
+Where,<br>
+<i>Runtime </i>= Total runtime to generate final mask solution measured in milliseconds<br>
+<i>nprocs </i>= Number of processors used by mask optimization program<br>
+<i>PVBand_Area </i>= Area of process variability band as determined by the PV Band simulator provided<br>
+<i>Sum </i>= Will be performed across the testcases<br>
+</p>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1">9. Problem C Alpha Submission Details</h2>
+<p class="auto-style2">Due to questions from a number of contestants, here is a clarification of what you will need to submit for Alpha. We will require a tarball (.tar.gz file) containing the following:</p>
+<ol>
+	<li><p class="auto-style2">All your <b>source code</b> without any external dependencies on other libraries. This may be in C or C++. We are not accepting submissions in any other language.</p></li>
+	<li><p class="auto-style2">A <b>Makefile</b>, that can be called with <b>make</b> to call the compilation and building to generate the executable (note that we ask for all the source code and Makefile because compilation on one system is not necessarily compatible with other systems).</p></li>
+	<li><p class="auto-style2">The executable file MUST be named <b>"maskoptimizer.exe"</b>.</p></li>
+	<li><p class="auto-style2">The executable file must accept, as input on the command line:<br>
+	(a) The name of the input layout in GULP<br>
+	(b) The name of the output layout, also in GULP<br>
+	e.g. <b>maskoptimizer.exe /full/path/m1opc_input.glp /full/path/m1opc_mask.glp</b></p></li>
+	<li><p class="auto-style2">No other inputs will be provided on the command line.</p></li>
+	<li><p class="auto-style2">To learn more about Makefiles: <a href="http://mrbook.org/tutorials/make/">http://mrbook.org/tutorials/make/</a></p></li>
+</ol>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1"><a name="clarifications"></a>10. Few more clarifications</h2>
+<ol>
+	<li><p class="auto-style2">The <b>lithosim</b> package has been provided to give you access to the models which are being used for simulation, and to help you build your code around it. Feel free to modify this package as you deem necessary.</p></li>
+	<li><p class="auto-style2">The <b>pvbandsim</b> package is the one that will be used for evaluation. You should NOT modify this package in anyway. Simply use the output pvband area from this evaluator to guide any modifications to your algorithm. Remember that mask optimization is a non-convex problem, so there is no 'golden' answer -- only the best solution you can come up with in a reasonable runtime.</p></li>
+	<li><p class="auto-style2">For GPU users, I have access to an Nvidia machine with CUDA drivers, 2.6GHz, 4GB RAM and quad-core processors. If you need any other specs from the machine, please email me. I will use the same machine or one with similar specs to run the CPU-based submissions as well. Remember that the runtime for GPU-based submissions will be scaled up since the purpose of this contest is to look at smart algorithms that converge fast.</p></li>
+	<li><p class="auto-style2">EPE Measurement -- some of you have asked exactly how and where the edge placement error (EPE) will be measured. I have proposed a limit of 15nm (=15 pixels) for the EPE. I am attaching a document outlining where exactly the EPE measurements will be made. You will notice that I am not enforcing this EPE measurement for short corners. This is because in lithography, we allow corners to round and violate some amount of EPE (as long as no electrical violations are caused).</p></li>
+	<li><p class="auto-style2">Unseen testcases -- remember that the testcases I have provided are not a complete set of benchmarks. I will be using 2 unseen testcases to see how well your mask optimization algorithm generalizes to something that it was not trained on</p></li>
+	<li><p class="auto-style2">Runtime -- Many of you have asked if Runtime*(n-1) expression in the cost function is valid for n=1. The answer is no. For n=1, the cost function will be:</p>
+	<pre><i>C</i> = <i>Runtime</i> + 4*<i>PVBand_Area</i></pre>
+	<p class="auto-style2">Also, having run the alpha submissions and judged the runtime on my evaluation machine, I am going to fix the unit of runtime at seconds (and not milliseconds as stated before).</p></li>
+	<li><p class="auto-style2">PVBandSim package -- I am also releasing an updated version of the "pvbandsim" package, which will be used for evaluation of PV Band area. In the previous release, I had failed to notice that it was using attenuated mask for simulation, whereas we are working with binary masks. I have moved to correct this error in the new release. Thank you to the contestant who pointed this mistake out. Usage is same as before.</p></li>
+	<li><p class="auto-style2">A few of you have asked me what happens if EPE criterion is not met. I am therefore adding a term to the cost function to address this. Essentially there will be an added penalty based on the number of EPE violations. So you are still free to have some EPE violations, but note that your cost will be higher. You already have the details of where EPE will be measured. I am working to provide you an EPE evaluator which can be used to determine the number of violations in any given solution, stay tuned for that. Here is the updated cost function:</p>
+	<pre><b>Score = Sum(Runtime*(nprocs-1) + 4*PVBand_Area + 5000*{Number of EPE Violations}), if nprocs > 1
+      = Sum(Runtime + 4*PVBand_Area + 5000*{Number of EPE Violations}), if nprocs = 1</b></pre>
+	<p class="auto-style2">Note:</p>
+	<ol><li><p class="auto-style2">Runtime to generate final mask solution measured in seconds</p></li>
+	<li><p class="auto-style2">PV Band area measured in sq. nm.</p></li>
+	<li><p class="auto-style2">EPE violation occurs when distance between target edge and contour >15nm (pixels)</p></li>
+	<li><p class="auto-style2">nprocs is the number of processors being used by your code</p></li></ol>
+	</li>
+	<li><p class="auto-style2">Based on alpha submission, I notice that no one has GPU-based implementation. I am therefore closing out any GPU-based submissions. You are, however, absolutely welcome to pursue OpenMP based parallelized applications. In the machine specs below, I have specified the number of cores.</p></li>
+	<li><p class="auto-style2">I have received some concerns about submitting source code. Let me move to clarify. I will accept a binary/executable as submission provided it runs on my machine settings (provided below). For alpha, I had to work with most of you who submitted binaries because they did not meet that criterion.<br><br>
+	======================<br>
+	Machine Specifications<br>
+	======================<br>
+	OS: Red Hat Enterprise Linux Server release 5.6 (Tikanga)<br>
+	CPU: 64-bit Intel(R) Xeon(R) CPU X7542 @ 2.65GHz<br>
+	MemTotal: 792603276 kB<br>
+	Number of Cores: 32<br>
+	Linux kernel: 2.6.18-274.7.1.el5<br>
+	GCC version: gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)<br>
+	Thread model: posix Target: x86_64-redhat-linux<br><br>
+	From /proc/cpuinfo<br>
+	<pre>
+processor       : 23
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 46
+model name      : Intel(R) Xeon(R) CPU           X7542  @ 2.67GHz
+stepping        : 6
+cpu MHz         : 2660.094
+cache size      : 18432 KB
+physical id     : 3
+siblings        : 6
+core id         : 11
+cpu cores       : 6
+apicid          : 118
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 11
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx rdtscp lm constant_tsc ida nonstop_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr sse4_1 sse4_2 popcnt lahf_lm
+bogomips        : 5320.09
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 44 bits physical, 48 bits virtual
+power management: [8]
+
+	</pre></p></li>
+	<a name="EPE_Checker"></a>
+	<li><p class="auto-style2">I am releasing an EPE checker tool. A big word of thanks to the contestant who has provided their code to act as an EPE checker. Download the attached tarball "<a href="EPE_checker_v4.tar.gz">EPE_checker_v4.tar.gz</a>" and extract into a directory of your choice. Please ensure that your lithosim executable is in the same directory. The usage of this tool is as follows:<br><br>
+	./EPEchecker.exe [input_layout.glp]  [optimized_mask.glp] result.txt<br>
+	[search_bound]<br><br>
+	The input_layout.glp will be the testcase being analyzed. The optimized_mask.glp file will be the result of your mask optimization tool when run on this testcase. The result.txt  file will dump a summary of the EPE violations. The parameter "search_bound" specifies the maximum distance to search till when determining EPE. For the purpose of testing, you should check out to a distance of 30 pixels, and EPE violation is flagged if EPE > 15 pixels. A file called "ViolationPoints.csv" should also be produced in the same directory which will have the locations of the EPE violations.<br><br>
+	If you have not already implemented your own EPE checks, I hope you will find this tool useful. Please let me know if you notice any issues.</p></li>
+	<li><p class="auto-style2">I have also updated the definition of EPE to make it more clear. Please find this updated definition in the attached Word document. To summarize:<br>
+	Update #1: The EPE checks have been relaxed to be at 40nm intervals, instead of 20nm intervals. This means you have to satisfy EPE constraints at fewer points. This should make things easier for you.<br>
+	Update #2: You will notice is that we will check for holes and lagoon in the solution. I fully expect that none of your are making mask optimization solutions that produce holes in the wires. However, I will be visually inspecting the nominal contour from your final mask solution to inspect this. We will impose a penalty for any holes in the contour (see updated cost function below), tagged as "ShapeViol". This is necessary because such holes will not be captured by the EPE spec. Remember that this check is only on the nominal contour -- you may have pinching or bridging showing up on your PV bands and that is acceptable (at some penalty to your PV BAnd area) -- the purpose of this contest is to find a good mask solution, but not necessary that every set of shapes will always have a robust solution.
+	</p></li>
+	<li><p class="auto-style2">Also note that for Runtime, I take the "wall time" in seconds. In previous iterations, I may have been confusing by calling it "CPU time". Please let me know if any of you are pursuing multi-core solutions for this problem.
+	</p></li>
+</ol>
+-->
+
+<!----------------------------------------------------------------------------->
+<!--
+<h2 class="auto-style1">11. How to Measure Edge Placement Error</h2>
+<p class="auto-style2">As you probably already know by now, edge placement error (EPE) is the geometric displacement of the contour from the target edge of the polygon, as shown in the figure below.</p>
+<img alt="edge placement error (EPE)" width="869" height="423" src="epe.png" />
+<p class="auto-style2">Below are the simple rules I will use to determine the locations to measure EPE. Remember that your constraint on EPE is &lt;=15nm. Hence you will have to ensure that this constraint is met at the locations specified by this set of rules:</p>
+<ol>
+	<li><p class="auto-style2">Every polygon will be processed edge by edge</p></li>
+	<li><p class="auto-style2">EPE is always measured perpendicular to the edge i.e. Manhattan distance.</p></li>
+	<li><p class="auto-style2">For a given edge, if edge length &gt;=80nm (80 pixels), then EPE is measured at the center of the edge only</p></li>
+	<li><p class="auto-style2">If edge length >80nm, then start measurement xstart is made 30nm from the first vertex, end measurement xend is made 30nm in from the second vertex. Each subsequent measurement is made 20nm inward from the previous measurement locations and the new measurement location is recorded i.e. after the ith iteration xstart,i = xstart shifted inward by i*20nm, xend,i = xend shifted inward by i*20nm until xstart,i and xend,i cross each other.</p></li>
+</ol>
+<p class="auto-style2">An illustration is provided below, where the EPE measurement points are shown as crosses.</p>
+-->
+<!-- <img alt="measurement points" src="m_point.png" /> -->
+<!--
+<a name="measurement"></a>
+<img alt="measurement points" src="EPE_Measurement.jpg" />
+
+<h2 class="auto-style1">12. Alpha Test Result</h2>
+<p class="auto-style2"><b><u>No Submission:</u></b><br></p>
+<p class="auto-style2">cada042<br>
+cada064 <br>
+cada090</p>
+<p class="auto-style2"><b><u>Compiled and running:</u></b><br></p>
+<p class="auto-style2">
+cada010<br>
+cada021<br>
+cada027<br>
+cada038<br>
+cada039<br>
+cada045<br>
+cada048<br>
+cada054<br>
+cada067<br>
+cada088<br>
+cada080<br>
+</p>
+-->
+<!--
+<p class="auto-style2"><b><u>Did not compile / run or No Source Files provided:</u></b><br></p>
+<p class="auto-style2">cada045 (Seg fault)<br> 
+cada027<br>
+cada039<br>
+cada088</p>
+<p class="auto-style2"><b><u>Compiled and running, but unexpected output:</u></b><br></p>
+<p class="auto-style2">cada038<br>
+cada048<br>
+cada054<br>
+cada067</p>
+<p class="auto-style2"><b><u>Compiled and running successfully:</u></b><br></p>
+<p class="auto-style2">cada010<br>
+cada021<br>
+cada080</p>
+-->
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 20:19:16 Jan 08, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:30:00 Oct 07, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 151.398 (11)
+  exclusion.robots: 3.478
+  exclusion.robots.policy: 3.466
+  cdx.remote: 0.089
+  esindex: 0.011
+  LoadShardBlock: 120.88 (3)
+  PetaboxLoader3.datanode: 178.747 (4)
+  load_resource: 98.556
+  PetaboxLoader3.resolve: 37.164
+-->
