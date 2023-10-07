@@ -11,3 +11,6 @@ R. O. Topaloglu, "ICCAD-2014 CAD contest in design for manufacturability flow fo
 advanced semiconductor nodes and benchmark suite," 2014 IEEE/ACM International 
 Conference on Computer-Aided Design (ICCAD), San Jose, CA, USA, 2014, pp. 367-368, 
 doi: 10.1109/ICCAD.2014.7001377.
+
+You can view this page at: https://rasitot.github.io/iccad14/iccad2014problemC.html
+
